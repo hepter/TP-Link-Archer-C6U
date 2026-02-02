@@ -2,7 +2,7 @@ from logging import Logger
 
 from tplinkrouterc6u import TPLinkXDRClient
 from tplinkrouterc6u.common.exception import ClientException
-from tplinkrouterc6u.client.c6u import TplinkRouter, TplinkRouterV1_11
+from tplinkrouterc6u.client.c6u import TplinkRouter, TplinkRouterV1_11, TplinkRouterSVR
 from tplinkrouterc6u.client.be230 import TplinkBE230Router
 from tplinkrouterc6u.client.deco import TPLinkDecoClient
 from tplinkrouterc6u.client_abstract import AbstractRouter
@@ -38,6 +38,7 @@ class TplinkRouterProvider:
                        TPLinkDecoClient,
                        TPLinkXDRClient,
                        TPLinkRClient,
+                       TplinkRouterSVR,
                        TplinkBE230Router,
                        TplinkRouterV1_11,
                        TplinkRouter,
